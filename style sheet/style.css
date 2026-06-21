@@ -1,0 +1,220 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0,.5)),url("/foodeat\ image/food.jpg");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-size: cover;
+    color:white;
+}
+.landing{
+    margin-left: 1em;
+}
+header{
+    display:flex;
+    flex-wrap: wrap;
+}
+header h2{
+    flex:3;
+    min-width:165px;
+    margin-left:10px;
+    color:salmon
+}
+header nav{
+    display:flex;
+    flex:3;
+}
+nav a{
+    flex:1;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+    min-width:55px;
+    color:whitesmoke;
+    transition: 0.3s;
+}
+nav a:hover{
+    color:salmon;
+    text-decoration: underline;
+}
+.top{
+    display:flex;
+    flex-wrap: wrap;
+}
+.top .left1{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    min-width: 351px;
+    color:azure;
+}
+.top .right1{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top:2em;
+    min-width:351px;
+}
+.top .right1 img{
+    width:300px;
+    /* margin-bottom: 3rem; */
+    /* box-shadow: 0px 0px 10px black; */
+}
+.top .tagline1,.bottom .tagline1{
+    text-indent: 2.3em;
+    text-align: justify;
+}
+.btn{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:flex-end;
+     align-items: center;
+     column-gap:8em;
+    box-sizing: border-box;
+}
+.btn button{
+    flex:1;
+    min-width:119.3px;
+    margin-top:3em;
+    margin-right:1.3em;
+    font-size: .9rem;
+    padding:8px 14px;
+    font-weight: bold;
+    color:whitesmoke;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px black;
+    border:1px solid salmon;
+    background-color:salmon;
+    transition: .3s;
+}
+.btn button:hover{
+    background-color: rgb(44, 255, 2);
+    border:1px solid rgb(44,255,2);
+    color:black;
+    transform: scale(1.1);
+}
+.middle h1{
+    margin-top:2em;
+    text-align: center;
+    color:azure;
+}
+.middle p{
+    position: relative;
+    bottom:1em;
+    text-align: center;
+    font-size: 1em;
+}
+.toplist{
+    display: flex;
+    gap:40px;
+    flex-wrap: wrap;
+}
+.img{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    border-radius: 10px;
+    min-width:281px;
+}
+.toplist img{
+    width: 300px;
+    position: relative;
+    bottom: 30px;
+}
+.img img{
+    align-self: center;
+}
+.img h3{
+    text-align: center;
+}
+.img p{
+    text-align:center;
+    font-size: 1.2em;
+    color:wheat;
+}
+.img{
+    background-color:rgba(88, 88, 88, 0.3);
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+.bottom img{
+    width: 400px;
+}
+.bottom .left2{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    min-width:351px;
+}
+.bottom .right2{
+    flex:1;
+    min-width:351px;
+}
+.right2 h2{
+      color:azure;
+}
+.bottom{
+    font-size: 1.2em;
+}
+footer{
+    margin-top: 4em;
+}
+footer h2{
+    text-align: center;
+}
+.services{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+}
+.services h2{
+      color:azure;
+}
+.s{
+    display: flex;
+    justify-content: center;
+}
+.services a{
+    text-decoration: none;
+    color:white;
+    transition:.3s
+}
+.services a:hover{
+    color: rgb(6, 255, 6);
+    text-decoration: underline;
+}
+@media all and (max-width:715px){
+    .bottom .left2{
+          margin-top: 2rem;
+    }
+    .bottom h2{
+        text-align: center;
+    }
+   .bottom .tagline1,.top .tagline1{
+    line-height:35px;
+        text-indent: 0px;
+    }
+    .top h2{
+        position: relative;
+        top:.2em;
+    }
+}
+@media all and (max-width:660px){
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
